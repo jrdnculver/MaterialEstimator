@@ -1,0 +1,210 @@
+{
+
+  "1": {
+    "Category": "Floor",
+    "Item": "Floor",
+    "Description": "Concrete",
+    "Size": "Cubic Yard",
+    "Cost": 75.00
+  },
+
+  "2": {
+    "Category": "Floor",
+    "Item": "Rebar",
+    "Description": "Steel",
+    "Size": "1/2inch x 10ft",
+    "Cost": 4.50
+  },
+  "3": {
+    "Category": "Floor",
+    "Item": "Forms",
+    "Description": "Pine",
+    "Size": "2inch x 4inch - 12ft",
+    "Cost": 11.30
+  },
+  "4": {
+    "Category": "Floor",
+    "Item": "Forms",
+    "Description": "Pine",
+    "Size": "2inch x 4inch - 16ft",
+    "Cost": 16.45
+  },
+  "5": {
+    "Category": "Wall",
+    "Item": "Stud",
+    "Description": "Pine",
+    "Size": "2inch x 4inch - 92 5/8inches",
+    "Cost": 3.10
+  },
+
+  "6": {
+    "Category": "Wall",
+    "Item": "Partial Studs",
+    "Description": "Pine",
+    "Size": "2inch x 4inch - 8ft",
+    "Cost": 3.00
+  },
+  "7": {
+    "Category": "Wall",
+    "Item": "Top Plate",
+    "Description": "Pine",
+    "Size": "2inch x 4inch - 8ft",
+    "Cost": 3.10
+  },
+  "8": {
+    "Category": "Wall",
+    "Item": "Sole Plate",
+    "Description": "Pine",
+    "Size": "2inch x 6inch - 8ft",
+    "Cost": 3.10
+  },
+  "9": {
+    "Category": "Wall",
+    "Item": "Headers",
+    "Description": "Pine",
+    "Size": "1/2inch x 4ft x 8ft",
+    "Cost": 7.00
+  },
+  "10": {
+    "Category": "Wall",
+    "Item": "Wall Sheathing",
+    "Description": "OSB",
+    "Size": "2inch x 4inch - 8ft",
+    "Cost": 4.20
+  },
+  "11": {
+    "Category": "Wall",
+    "Item": "Vapor Barrier",
+    "Description": "House Wrap",
+    "Size": "9ft x 150ft",
+    "Cost": 98.00
+  },
+  "12": {
+    "Category": "Wall",
+    "Item": "Siding",
+    "Description": "3/4inch Wood Bevel Siding",
+    "Size": "Bundle of 200sqft",
+    "Cost": 300.00
+  },
+  "13": {
+    "Category": "Wall",
+    "Item": "Wall Finish",
+    "Description": "OSB",
+    "Size": "2inch x 4inch - 8ft",
+    "Cost": 7.00
+  },
+  "14": {
+    "Category": "Wall",
+    "Item": "Paint",
+    "Description": "Exterior Latex Paint",
+    "Size": "Gallon 400 sqft per Gallon",
+    "Cost": 16.00
+  },
+  "15": {
+    "Category": "Wall",
+    "Item": "R-11 Insulation",
+    "Description": "FiberGlass",
+    "Size": "3.5inch x 15inch x 40sqft",
+    "Cost": 9.00
+  },
+  "16": {
+    "Category": "Wall",
+    "Item": "Anchor Bolt",
+    "Description": "Steel",
+    "Size": "1/2inch x 6 inch",
+    "Cost": 0.50
+  },
+  "17": {
+    "Category": "Openings",
+    "Item": "Double Hung Window",
+    "Description": "Vinyl",
+    "Size": "24inches x 36inches",
+    "Cost": 136.00
+  },
+
+  "18": {
+    "Category": "Openings",
+    "Item": "Door",
+    "Description": "Steel",
+    "Size": "Double 7ft x 80inches",
+    "Cost": 250.00
+  },
+  "19": {
+    "Category": "Openings",
+    "Item": "Door",
+    "Description": "Steel",
+    "Size": "Single 3.5ft x 80inches",
+    "Cost": 120.00
+  },
+  "20": {
+    "Category": "Openings",
+    "Item": "Door",
+    "Description": "Pine",
+    "Size": "Interior 3.2ft x 80inches",
+    "Cost": 120.00
+  },
+  "21": {
+    "Category": "Roof",
+    "Item": "Ridge Board",
+    "Description": "Pine",
+    "Size": "2inch x 8inch x 8ft",
+    "Cost": 3.30
+  },
+
+  "22": {
+    "Category": "Roof",
+    "Item": "Rafters",
+    "Description": "Pine",
+    "Size": "2inch x 6inch x 6ft",
+    "Cost": 2.90
+  },
+  "23": {
+    "Category": "Roof",
+    "Item": "Blocking",
+    "Description": "Pine",
+    "Size": "2inch x 6inch x 6ft",
+    "Cost": 2.90
+  },
+  "24": {
+    "Category": "Roof",
+    "Item": "Sheathing",
+    "Description": "OSB",
+    "Size": "7/16inch x 4ft x 8ft",
+    "Cost": 6.40
+  },
+  "25": {
+    "Category": "Roof",
+    "Item": "Roofing Felt 15#",
+    "Description": "Felt",
+    "Size": "500sqft",
+    "Cost": 23.70
+  },
+  "26": {
+    "Category": "Roof",
+    "Item": "Shingles",
+    "Description": "Asphalt",
+    "Size": "Square (Covers 100sqft)",
+    "Cost": 23.80
+  },
+  "27": {
+    "Category": "Roof",
+    "Item": "R-19 Insulation",
+    "Description": "FiberGlass",
+    "Size": "5.5inch x 15inch x 87.5sqft",
+    "Cost": 27.85
+  },
+  "28": {
+    "Category": "Roof",
+    "Item": "Fascia",
+    "Description": "Pine",
+    "Size": "1inch x 8inch x 10ft",
+    "Cost": 12.70
+  },
+  "29": {
+    "Category": "Roof",
+    "Item": "Drip Edge",
+    "Description": "Galvenized Metal",
+    "Size": "3inch x 10ft",
+    "Cost": 3.80
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Xgi+byE6IJb4r1a7l7QTtG7j3ZSDfU9RAFZXQ6zqLOUvkxtiWvuFBcvJjDGHaR52u2Vq0yWjqcSe9Ahff/9yZg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\kentu\\source\\repos\\materialEstimatorCondensed\\materialEstimatorCondensed\\materialEstimatorCondensed.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kentu\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
