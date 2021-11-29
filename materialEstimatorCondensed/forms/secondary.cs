@@ -18,6 +18,7 @@ namespace materialEstimatorCondensed
         public secondary()
         {
             InitializeComponent();
+            // initialize potential forms
             floor = this;
             wall = this;
             openings = this;
@@ -25,6 +26,7 @@ namespace materialEstimatorCondensed
             informationLbl.Text = "Select an item from the listbox, fill in the quanity, and press Add Material";
         }
 
+        // Will add selected material
         private void addMaterialBtn_Click(object sender, EventArgs e)
         {
             secondary form = primary.material.getCorrectForm();
@@ -33,6 +35,7 @@ namespace materialEstimatorCondensed
 
         }
 
+        // Clear textboxes
         private void clearBtn_Click(object sender, EventArgs e)
         {
             secondary form = primary.material.getCorrectForm();
@@ -40,6 +43,7 @@ namespace materialEstimatorCondensed
             primary.material.clearTextBoxes(form);
         }
 
+        // Return to home
         private void homeBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -53,6 +57,7 @@ namespace materialEstimatorCondensed
             primary.home.Show();
         }
 
+        // Go to eimate page
         private void showEstimateBtn_Click(object sender, EventArgs e)
         {
             finalEstimate final = new finalEstimate();
@@ -62,6 +67,7 @@ namespace materialEstimatorCondensed
             final.Show();
         }
 
+        // if item selected, will set textbox values to item selection
         private void secondaryListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             secondary form = primary.material.getCorrectForm();

@@ -15,6 +15,7 @@ namespace materialEstimatorCondensed
         public string Date { get; set; } = DateTime.Now.ToString("f");
         public string Finish { get; set; } = "ESTIMATE COMPLETE";
 
+        // setting the save location
         public string setSaveLocation(string fileName)
         {
             string exeDir = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
@@ -30,6 +31,7 @@ namespace materialEstimatorCondensed
             return finalPath;
         }
 
+        // creating a header for the file
         public string createHeader()
         {
             string Header = $"{Name,-50}{Head,-60}{Date,35}";
@@ -37,6 +39,7 @@ namespace materialEstimatorCondensed
             return Header;
         }
 
+        // creating footer for the file
         public string createFooter()
         { 
             string Footer = $"{Finish,85}";
@@ -44,6 +47,7 @@ namespace materialEstimatorCondensed
             return Footer;
         }
 
+        // create body of the file
         public void createItemsReceipt()
         {
             string totalCost = EstimateList.TotalCost.Sum().ToString("C");

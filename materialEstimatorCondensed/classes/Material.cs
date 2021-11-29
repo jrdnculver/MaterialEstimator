@@ -17,6 +17,7 @@ namespace materialEstimatorCondensed
         public string Size { get; set; }
         public double Cost { get; set; }
 
+        // Read json from file
         public void readJson()
         {
             string jsonPath = getFileLocation(@"materialList.json");
@@ -34,6 +35,7 @@ namespace materialEstimatorCondensed
             }
         }
 
+        // Get location of image for form
         public string getImageLocation(string jsonFile)
         {
             string exeDir = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
@@ -45,6 +47,7 @@ namespace materialEstimatorCondensed
             return jsonPath;
         }
 
+        // Get file location to select files for program
         public string getFileLocation(string jsonFile)
         {
             string exeDir = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
@@ -56,6 +59,7 @@ namespace materialEstimatorCondensed
             return jsonPath;
         }
 
+        // Creates material
         public Material generateMaterial(string category, string item, string description, string size, double cost)
         {
             Material create = new Material();
@@ -69,6 +73,7 @@ namespace materialEstimatorCondensed
             return create;
         }
 
+        // textbox validation and inputs
         public void addTextBoxValues(secondary form)
         {
             int checkQuantity;
@@ -139,16 +144,20 @@ namespace materialEstimatorCondensed
             }
 
         }
+
+        // clear textboxes
         public void clearTextBoxes(secondary form)
         {
             form.categoryText.Text = form.itemText.Text = form.descriptionText.Text = form.sizeText.Text = form.priceText.Text = form.quantityText.Text = "";
         }
 
+        // clear list box
         public void clearListBox(secondary form)
         {
             form.secondaryListBox.Items.Clear();
         }
 
+        // set text box values to selected text
         public void setTextBoxValues(secondary form, List<string> finalSelected)
         {
             var list = finalSelected;
@@ -159,6 +168,7 @@ namespace materialEstimatorCondensed
             form.priceText.Text = finalSelected[4].Replace("|", "").Trim();
         }
 
+        // set listbox values to floor
         public void setFloor()
         {
             secondary.floor.headerLbl.Text = "Floor Material";
@@ -170,6 +180,7 @@ namespace materialEstimatorCondensed
             supplies.ForEach(x => secondary.floor.secondaryListBox.Items.Add(String.Format($"{x.Category,-15}{x.Item,-25}| {x.Description,-28}| {x.Size,-30}| {x.Cost,10:C}")));
         }
 
+        // set listbox values to wall
         public void setWall()
         {
             secondary.wall.headerLbl.Text = "Wall Material";
@@ -181,6 +192,7 @@ namespace materialEstimatorCondensed
             supplies.ForEach(x => secondary.floor.secondaryListBox.Items.Add(String.Format($"{x.Category,-15}{x.Item,-25}| {x.Description,-28}| {x.Size,-30}| {x.Cost,10:C}")));
         }
 
+        // set listbox values to openings
         public void setOpenings()
         {
             secondary.openings.headerLbl.Text = "Openings Material";
@@ -192,6 +204,7 @@ namespace materialEstimatorCondensed
             supplies.ForEach(x => secondary.floor.secondaryListBox.Items.Add(String.Format($"{x.Category,-15}{x.Item,-25}| {x.Description,-28}| {x.Size,-30}| {x.Cost,10:C}")));
         }
 
+        // set listbox values to roof
         public void setRoof()
         {
             secondary.roof.headerLbl.Text = "Roof Material";
@@ -203,6 +216,7 @@ namespace materialEstimatorCondensed
             supplies.ForEach(x => secondary.floor.secondaryListBox.Items.Add(String.Format($"{x.Category,-15}{x.Item,-25}| {x.Description,-28}| {x.Size,-30}| {x.Cost,10:C}")));
         }
 
+        // select appropriate form based on user material selection
         public secondary getCorrectForm()
         {
             switch (EstimateList.ActiveForm)

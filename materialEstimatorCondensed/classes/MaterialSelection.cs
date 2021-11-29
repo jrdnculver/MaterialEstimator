@@ -14,6 +14,7 @@ namespace materialEstimatorCondensed
         public double Cost { get; set; }
         public int Quantity { get; set; }
 
+        // Generate estimate
         public void generateEstimate(string category, string item, string description, string size, double cost, int quantity)
         {
             MaterialSelection selection = new MaterialSelection();
@@ -27,6 +28,7 @@ namespace materialEstimatorCondensed
             EstimateList.CreatedEstimates.Add(selection);
         }
 
+        // if object is selected
         public List<string> ObjectSelection(string selectedItem)
         {
             List<string> selected = selectedItem.Split("  ").ToList();

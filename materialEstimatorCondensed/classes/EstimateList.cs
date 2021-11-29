@@ -8,13 +8,17 @@ namespace materialEstimatorCondensed
 {
     public class EstimateList
     {
+        // Created Material List
         public static List<Material> CreatedMaterials = new List<Material>();
 
+        // Created Estimates List
         public static List<MaterialSelection> CreatedEstimates = new List<MaterialSelection>();
 
+        // Total Cost List
         public static List<double> TotalCost = new List<double>();
         public static int ActiveForm { get; set; }
 
+        // Creates the output for final Estimate
         public void settingFinalEstimate()
         {
             finalEstimate.final.finalListBox.Items.Add($"{"Catergory", -10}  |  {"Item",-20}  |  {"Description",-25}  |  {"Size",-28}  |  {"Cost",-10:C}  |  {"Quantity",-10}  |  {"Item Cost",-10}");
@@ -24,6 +28,7 @@ namespace materialEstimatorCondensed
             finalEstimate.final.finalCostLbl.Text = TotalCost.Sum().ToString("C");
         }
 
+        // Removes all content from list box
         public void clearAllFinalListBox()
         {
             finalEstimate.final.finalListBox.Items.Clear();
@@ -37,6 +42,7 @@ namespace materialEstimatorCondensed
             finalEstimate.final.finalCostLbl.Text = "Return Home To Add More Items";
         }
 
+        // Clears single item from list box
         public void clearSingleFinalListBox()
         {
             try

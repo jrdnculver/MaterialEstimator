@@ -17,3 +17,4 @@ C:\Users\kentu\source\repos\materialEstimatorCondensed\materialEstimatorCondense
 C:\Users\kentu\source\repos\materialEstimatorCondensed\materialEstimatorCondensed\obj\Debug\netcoreapp3.1\materialEstimatorCondensed.genruntimeconfig.cache
 C:\Users\kentu\source\repos\materialEstimatorCondensed\materialEstimatorCondensed\obj\Debug\netcoreapp3.1\materialEstimatorCondensed.finalEstimate.resources
 C:\Users\kentu\source\repos\materialEstimatorCondensed\materialEstimatorCondensed\obj\Debug\netcoreapp3.1\materialEstimatorCondensed.csproj.AssemblyReference.cache
+C:\Users\kentu\source\repos\materialEstimatorCondensed\materialEstimatorCondensed\obj\Debug\netcoreapp3.1\materialEstimatorCondensed.GeneratedMSBuildEditorConfig.editorconfig

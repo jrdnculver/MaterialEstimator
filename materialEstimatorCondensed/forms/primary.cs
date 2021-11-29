@@ -22,18 +22,21 @@ namespace materialEstimatorCondensed
 
         public static Saving saved = new Saving();
 
-
+        
         public primary()
         {
             InitializeComponent();
+            // initialize form
             home = this;
         }
 
+        // close the program
         private void exitBtn_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
+        // reads json and leads to correct form Floor
         private void floorBtn_Click(object sender, EventArgs e)
         {
             EstimateList.ActiveForm = 1;
@@ -43,6 +46,7 @@ namespace materialEstimatorCondensed
             secondary.floor.Show();
         }
 
+        // reads json and leads to correct form Wall
         private void wallsBtn_Click(object sender, EventArgs e)
         {
             EstimateList.ActiveForm = 2;
@@ -53,6 +57,7 @@ namespace materialEstimatorCondensed
 
         }
 
+        // reads json and leads to correct form Openings
         private void openingBtn_Click(object sender, EventArgs e)
         {
             EstimateList.ActiveForm = 3;
@@ -62,6 +67,7 @@ namespace materialEstimatorCondensed
             secondary.openings.Show();
         }
 
+        // reads json and leads to correct form Roof
         private void roofBtn_Click(object sender, EventArgs e)
         {
             EstimateList.ActiveForm = 4;
@@ -71,6 +77,7 @@ namespace materialEstimatorCondensed
             secondary.roof.Show();
         }
 
+        // find image and set as background of primary form
         private void primary_Load(object sender, EventArgs e)
         {
             string imagePath = material.getImageLocation(@"houseNiceSky.jpg");
