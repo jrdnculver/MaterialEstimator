@@ -171,6 +171,8 @@ namespace materialEstimatorCondensed
         // set listbox values to floor
         public void setFloor()
         {
+            secondary.floor.secondaryListBox.Items.Clear();
+
             secondary.floor.headerLbl.Text = "Floor Material";
 
             List<Material> supplies = EstimateList.CreatedMaterials.Where(x => x.Category == "Floor").ToList();
@@ -178,11 +180,15 @@ namespace materialEstimatorCondensed
             secondary.floor.secondaryListBox.Items.Add($"{"Category",-15}{"Item",-25}| {"Description",-28}| {"Size",-30}| {"Cost",-10:C}");
 
             supplies.ForEach(x => secondary.floor.secondaryListBox.Items.Add(String.Format($"{x.Category,-15}{x.Item,-25}| {x.Description,-28}| {x.Size,-30}| {x.Cost,10:C}")));
+
+            EstimateList.CreatedMaterials.Clear();
         }
 
         // set listbox values to wall
         public void setWall()
         {
+            secondary.floor.secondaryListBox.Items.Clear();
+
             secondary.wall.headerLbl.Text = "Wall Material";
 
             List<Material> supplies = EstimateList.CreatedMaterials.Where(x => x.Category == "Wall").ToList();
@@ -190,11 +196,15 @@ namespace materialEstimatorCondensed
             secondary.floor.secondaryListBox.Items.Add($"{"Category",-15}{"Item",-25}| {"Description",-28}| {"Size",-30}| {"Cost",-10:C}");
 
             supplies.ForEach(x => secondary.floor.secondaryListBox.Items.Add(String.Format($"{x.Category,-15}{x.Item,-25}| {x.Description,-28}| {x.Size,-30}| {x.Cost,10:C}")));
+
+            EstimateList.CreatedMaterials.Clear();
         }
 
         // set listbox values to openings
         public void setOpenings()
         {
+            secondary.floor.secondaryListBox.Items.Clear();
+
             secondary.openings.headerLbl.Text = "Openings Material";
 
             List<Material> supplies = EstimateList.CreatedMaterials.Where(x => x.Category == "Openings").ToList();
@@ -202,11 +212,15 @@ namespace materialEstimatorCondensed
             secondary.floor.secondaryListBox.Items.Add($"{"Category",-15}{"Item",-25}| {"Description",-28}| {"Size",-30}| {"Cost",-10:C}");
 
             supplies.ForEach(x => secondary.floor.secondaryListBox.Items.Add(String.Format($"{x.Category,-15}{x.Item,-25}| {x.Description,-28}| {x.Size,-30}| {x.Cost,10:C}")));
+
+            EstimateList.CreatedMaterials.Clear();
         }
 
         // set listbox values to roof
         public void setRoof()
         {
+            secondary.floor.secondaryListBox.Items.Clear();
+
             secondary.roof.headerLbl.Text = "Roof Material";
 
             List<Material> supplies = EstimateList.CreatedMaterials.Where(x => x.Category == "Roof").ToList();
@@ -214,6 +228,8 @@ namespace materialEstimatorCondensed
             secondary.floor.secondaryListBox.Items.Add($"{"Category",-15}{"Item",-25}| {"Description",-28}| {"Size",-30}| {"Cost",-10:C}");
 
             supplies.ForEach(x => secondary.floor.secondaryListBox.Items.Add(String.Format($"{x.Category,-15}{x.Item,-25}| {x.Description,-28}| {x.Size,-30}| {x.Cost,10:C}")));
+
+            EstimateList.CreatedMaterials.Clear();
         }
 
         // select appropriate form based on user material selection

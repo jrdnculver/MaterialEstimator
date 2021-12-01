@@ -66,12 +66,13 @@ namespace materialEstimatorCondensed
             
                 finalEstimate.final.finalListBox.Items.Remove(itemSelected);
 
+
                 List<string> selected = itemSelected.Split("  ").ToList();
                 List<string> finalSelected = selected.Where(x => x != "" && x != "|" && x != " |").ToList();
 
-                string item = finalSelected[0].Replace("|", "").Trim();
-                string description = finalSelected[1].Replace("|", "").Trim();
-                string size = finalSelected[2].Replace("|", "").Trim();
+                string item = finalSelected[1].Replace("|", "").Trim();
+                string description = finalSelected[2].Replace("|", "").Trim();
+                string size = finalSelected[3].Replace("|", "").Trim();
                 double cost = double.Parse(finalSelected[4].Replace("|", "").Replace("$", "").Trim());
                 int quantity = int.Parse(finalSelected[5].Replace("|", "").Trim());
 
